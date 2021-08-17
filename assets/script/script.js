@@ -10,7 +10,6 @@ setInterval (function() {
     document.querySelector('#currentDay').innerText = dateObject;
 }, 1000);
 
-if (moment().hour() < 8) {
     document.querySelector('#Row8AM').style.backgroundColor = '#77dd77';
     document.querySelector('#Row9AM').style.backgroundColor = '#77dd77';
     document.querySelector('#Row10AM').style.backgroundColor = '#77dd77';
@@ -22,7 +21,6 @@ if (moment().hour() < 8) {
     document.querySelector('#Row4PM').style.backgroundColor = '#77dd77';
     document.querySelector('#Row5PM').style.backgroundColor = '#77dd77';
     document.querySelector('#Row6PM').style.backgroundColor = '#77dd77';
-}
 
 if (moment().hour() >= 8) {
     document.querySelector('#Row8AM').style.backgroundColor = '#ff6961';
